@@ -1,0 +1,22 @@
+# Required
+pygame>=2.5
+
+# --- Optional features (the app runs without them) ---
+
+# Spotify control
+spotipy>=2.23
+
+# Text-to-speech + microphone speech recognition
+pyttsx3>=2.90
+SpeechRecognition>=3.10
+# PyAudio is needed for the microphone. Installation is platform dependent:
+#   macOS:   brew install portaudio && pip install pyaudio
+#   Debian:  sudo apt install portaudio19-dev && pip install pyaudio
+# pyaudio
+
+# Offline speech recognition with Whisper (instead of Google online)
+# openai-whisper
+
+# Embed real YouTube inside the main window (macOS only)
+pyobjc-framework-Cocoa>=11.0; sys_platform == "darwin"
+pyobjc-framework-WebKit>=11.0; sys_platform == "darwin"
